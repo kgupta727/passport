@@ -154,3 +154,6 @@ textarea.input { padding: 12px 16px; min-height: 90px; resize: vertical; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }
 }
+
+/* Home page chapters: a rule and generous space between sections. */
+.home-section { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }

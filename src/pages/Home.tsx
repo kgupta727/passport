@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { mutate, useApi } from '../api';
 import { useMe } from '../me';
 import { Art, isPhoto } from '../components/Art';
-import { Icon, KIND_ICON } from '../components/Icon';
+import { Icon, IconName, KIND_ICON } from '../components/Icon';
 import { Chip, Dots, ErrorNote, Ring, Sheet, Skeleton } from '../components/ui';
 import { TrustChip } from '../components/Shell';
 import { money, pct, plural, toneBg, ago } from '../format';
@@ -40,7 +40,8 @@ export function Home() {
       </header>
 
       <section aria-label="Up next">
-        <h2 className="label mb-3">Up next</h2>
+        <SectionHead icon="bolt" title="Up next" sub="What needs you, one card at a time"
+          right={data?.cards.length > 1 ? <span className="text-[13px] font-extrabold text-ink-soft">{Math.min(i, data.cards.length - 1) + 1} of {data.cards.length}</span> : null} />
         {!data ? (error ? <ErrorNote>{error}</ErrorNote> : <Skeleton h={300} />) : data.cards.length === 0 ? (
           <div className="rounded-[32px] bg-sage p-7">
             <h3 className="text-[22px]">You are all caught up</h3>
@@ -62,42 +63,28 @@ export function Home() {
         )}
       </section>
 
-      {me.tenant.config.features.explore !== false && (
-        <Link to="/explore" className="flex items-center gap-4 rounded-[28px] bg-lilac p-5 mt-2">
-          <span className="w-12 h-12 rounded-full bg-surface grid place-items-center shrink-0 text-lilac-deep"><Icon name="pin" size={24} /></span>
-          <div className="flex-1 min-w-0"><h3 className="text-[18px]">Explore deals near me</h3><p className="font-bold text-lilac-deep text-[14px]">A map of finds around you. Rare ones glow.</p></div>
-          <Icon name="chevronRight" />
-        </Link>
-      )}
-
-      {data && data.kit.count > 0 && (
-        <Link to="/kit" className="block rounded-[28px] bg-surface border border-line p-5 mt-3">
-          <div className="flex items-center gap-4">
-            <Ring value={data.kit.sorted / data.kit.count} size={60}><span className="display text-[15px]">{data.kit.sorted}/{data.kit.count}</span></Ring>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center justify-between gap-2">
-                <h3 className="text-[18px]">Course Kit</h3>
-                <Icon name="chevronRight" className="text-ink-soft" />
-              </div>
-              <p className="font-bold text-ink-soft">{data.kit.sorted} of {data.kit.count} sorted, {money(data.kit.sorted_cents)} so far{data.kit.sorted < data.kit.count ? (data.kit.rest_cheapest_cents > 0 ? `. Cheapest for the rest: ${money(data.kit.rest_cheapest_cents)}` : '. The rest can be free') : ''}</p>
-              <div className="h-2 rounded-full bg-line mt-2 overflow-hidden"><div className="h-full bg-sage-deep rounded-full transition-all" style={{ width: pct(data.kit.sorted / data.kit.count) }} /></div>
-            </div>
-          </div>
-        </Link>
-      )}
-      {data && data.kit.count === 0 && (
-        <Link to="/kit" className="flex items-center gap-4 rounded-[28px] bg-sky p-5 mt-2">
-          <Icon name="kit" className="text-sky-deep" size={28} />
-          <div className="flex-1"><h3 className="text-[18px]">Build your Course Kit</h3><p className="font-bold text-sky-deep">Add classes, see every book's cheapest legit option.</p></div>
-          <Icon name="chevronRight" />
-        </Link>
-      )}
-
-      <section className="mt-8" aria-label="Your needs">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="label">Your needs</h2>
-          <Link to="/needs/new" className="btn-quiet text-[14px]">Add a need</Link>
+      <section aria-label="Tools" className="home-section">
+        <SectionHead icon="globe" title="Find and plan" sub="Browse the map, sort your books, shop other campuses" />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {me.tenant.config.features.explore !== false && (
+            <Tile to="/explore" tone="bg-lilac" iconTone="text-lilac-deep" icon="pin" title="Explore" sub="Deals on a map. Rare ones glow." />
+          )}
+          {data && data.kit.count > 0 ? (
+            <Link to="/kit" className="rounded-[24px] bg-surface border border-line p-4 flex flex-col gap-2 hover:border-ink/30 transition-colors">
+              <Ring value={data.kit.sorted / data.kit.count} size={44}><span className="display text-[12px]">{data.kit.sorted}/{data.kit.count}</span></Ring>
+              <h3 className="text-[16px]">Course Kit</h3>
+              <p className="text-[13px] font-bold text-ink-soft leading-snug">{data.kit.sorted} of {data.kit.count} books sorted{data.kit.sorted < data.kit.count ? (data.kit.rest_cheapest_cents > 0 ? `, ${money(data.kit.rest_cheapest_cents)} to finish` : ', the rest can be free') : ''}</p>
+            </Link>
+          ) : (
+            <Tile to="/kit" tone="bg-sky" iconTone="text-sky-deep" icon="kit" title="Course Kit" sub="Every book's cheapest legit option." />
+          )}
+          <Tile to="/carriers" tone="bg-butter" iconTone="text-butter-deep" icon="car" title="Other campuses" sub="Carrier trips and their listings." />
         </div>
+      </section>
+
+      <section aria-label="Your needs" className="home-section">
+        <SectionHead icon="needs" title="Your needs" sub="Passport watches these and ranks every offer"
+          right={<Link to="/needs/new" className="btn-quiet text-[14px] !min-h-0">Add a need</Link>} />
         <div className="card divide-y divide-line overflow-hidden">
           {data?.needs.filter((n: any) => !n.course_id).map((n: any) => <NeedRow key={n.id} n={n} />)}
           {data?.needs.filter((n: any) => n.course_id).length > 0 && (
@@ -109,10 +96,6 @@ export function Home() {
           </Link>
         </div>
       </section>
-
-      <Link to="/carriers" className="flex items-center gap-3 mt-6 px-2 text-ink-soft font-extrabold min-h-[44px]">
-        <Icon name="car" size={20} />Cross-campus carrier board<Icon name="chevronRight" size={18} className="ml-auto" />
-      </Link>
 
       <Sheet open={notes} onClose={() => setNotes(false)} title="Updates">
         {data?.notifications?.length ? (
@@ -128,6 +111,32 @@ export function Home() {
         ) : <p className="text-ink-soft">Nothing yet.</p>}
       </Sheet>
     </div>
+  );
+}
+
+/** A titled band: rule above, icon, title, one-line purpose. Gives the page clear chapters instead of a stack of bubbles. */
+function SectionHead({ icon, title, sub, right }: { icon: IconName; title: string; sub: string; right?: React.ReactNode }) {
+  return (
+    <div className="flex items-end justify-between gap-3 mb-4">
+      <div className="flex items-center gap-3 min-w-0">
+        <span className="w-9 h-9 rounded-[12px] bg-ink text-white grid place-items-center shrink-0"><Icon name={icon} size={18} /></span>
+        <div className="min-w-0">
+          <h2 className="text-[19px] leading-tight">{title}</h2>
+          <p className="text-[13px] font-bold text-ink-soft truncate">{sub}</p>
+        </div>
+      </div>
+      {right}
+    </div>
+  );
+}
+
+function Tile({ to, tone, iconTone, icon, title, sub }: { to: string; tone: string; iconTone: string; icon: IconName; title: string; sub: string }) {
+  return (
+    <Link to={to} className={`rounded-[24px] ${tone} p-4 flex flex-col gap-2 hover:brightness-[0.98] transition`}>
+      <span className={`w-11 h-11 rounded-full bg-surface grid place-items-center ${iconTone}`}><Icon name={icon} size={22} /></span>
+      <h3 className="text-[16px]">{title}</h3>
+      <p className={`text-[13px] font-bold leading-snug ${iconTone}`}>{sub}</p>
+    </Link>
   );
 }
 
