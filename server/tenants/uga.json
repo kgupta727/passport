@@ -1,0 +1,125 @@
+{
+  "slug": "uga",
+  "name": "University of Georgia",
+  "short": "UGA",
+  "domains": [
+    "uga.edu"
+  ],
+  "config": {
+    "displayName": "UGA",
+    "city": "Athens",
+    "safeZones": [
+      {
+        "id": "mainlib",
+        "name": "Main Library steps",
+        "lat": 33.9545,
+        "lng": -83.3739
+      },
+      {
+        "id": "tate",
+        "name": "Tate Student Center",
+        "lat": 33.9512,
+        "lng": -83.3753
+      },
+      {
+        "id": "ramsey",
+        "name": "Ramsey Center lobby",
+        "lat": 33.9381,
+        "lng": -83.3714
+      },
+      {
+        "id": "ugapd",
+        "name": "UGA Police lobby",
+        "lat": 33.9448,
+        "lng": -83.3693
+      }
+    ],
+    "housing": [
+      {
+        "id": "brumby",
+        "name": "Brumby Hall"
+      },
+      {
+        "id": "myers",
+        "name": "Myers Quad"
+      },
+      {
+        "id": "creswell",
+        "name": "Creswell Hall"
+      },
+      {
+        "id": "downtown",
+        "name": "Off campus (Downtown)"
+      }
+    ],
+    "walk": {
+      "brumby": {
+        "mainlib": 26,
+        "tate": 20,
+        "ramsey": 4,
+        "ugapd": 11
+      },
+      "myers": {
+        "mainlib": 21,
+        "tate": 15,
+        "ramsey": 9,
+        "ugapd": 7
+      },
+      "creswell": {
+        "mainlib": 28,
+        "tate": 22,
+        "ramsey": 6,
+        "ugapd": 15
+      },
+      "downtown": {
+        "mainlib": 8,
+        "tate": 13,
+        "ramsey": 36,
+        "ugapd": 26
+      }
+    },
+    "library": {
+      "name": "UGA Libraries course reserves",
+      "url": "https://www.libs.uga.edu/"
+    },
+    "courseCatalog": "csv:uga",
+    "shuttleDays": [],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "Georgia vs Alabama",
+      "needs": [
+        "2 tickets to the Alabama game",
+        "Basketball vs Tennessee"
+      ]
+    },
+    "map": {
+      "center": [
+        33.9483,
+        -83.3729
+      ],
+      "zoom": 15,
+      "bounds": [
+        [
+          33.9341,
+          -83.3805
+        ],
+        [
+          33.9625,
+          -83.3653
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#BA0C2F"
+    }
+  }
+}

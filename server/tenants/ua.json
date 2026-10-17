@@ -1,0 +1,143 @@
+{
+  "slug": "ua",
+  "name": "The University of Alabama",
+  "short": "UA",
+  "domains": [
+    "ua.edu",
+    "crimson.ua.edu"
+  ],
+  "config": {
+    "displayName": "UA",
+    "city": "Tuscaloosa",
+    "safeZones": [
+      {
+        "id": "gorgas",
+        "name": "Gorgas Library steps",
+        "lat": 33.2113,
+        "lng": -87.5462
+      },
+      {
+        "id": "ferguson",
+        "name": "Ferguson Student Center",
+        "lat": 33.2147,
+        "lng": -87.5446
+      },
+      {
+        "id": "rec",
+        "name": "Rec Center lobby",
+        "lat": 33.2066,
+        "lng": -87.5279
+      },
+      {
+        "id": "uapd",
+        "name": "UAPD lobby",
+        "lat": 33.2077,
+        "lng": -87.5385
+      }
+    ],
+    "housing": [
+      {
+        "id": "tutwiler",
+        "name": "Tutwiler Hall"
+      },
+      {
+        "id": "ridgecrest",
+        "name": "Ridgecrest"
+      },
+      {
+        "id": "presidential",
+        "name": "Presidential Village"
+      },
+      {
+        "id": "riverside",
+        "name": "Riverside"
+      },
+      {
+        "id": "strip",
+        "name": "Off campus (The Strip)"
+      }
+    ],
+    "walk": {
+      "tutwiler": {
+        "gorgas": 11,
+        "ferguson": 9,
+        "rec": 12,
+        "uapd": 6
+      },
+      "ridgecrest": {
+        "gorgas": 9,
+        "ferguson": 10,
+        "rec": 8,
+        "uapd": 5
+      },
+      "presidential": {
+        "gorgas": 14,
+        "ferguson": 15,
+        "rec": 6,
+        "uapd": 9
+      },
+      "riverside": {
+        "gorgas": 8,
+        "ferguson": 5,
+        "rec": 18,
+        "uapd": 12
+      },
+      "strip": {
+        "gorgas": 4,
+        "ferguson": 7,
+        "rec": 20,
+        "uapd": 13
+      }
+    },
+    "library": {
+      "name": "University Libraries (Gorgas)",
+      "url": "https://www.lib.ua.edu/"
+    },
+    "courseCatalog": "seed:ua-fall-2026",
+    "shuttleDays": [
+      {
+        "to": "uab",
+        "weekday": 4,
+        "label": "Crimson Ride Express to UAB"
+      }
+    ],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "Alabama vs Georgia",
+      "needs": [
+        "2 tickets to the Georgia game",
+        "Basketball vs Auburn"
+      ]
+    },
+    "map": {
+      "center": [
+        33.2101,
+        -87.5378
+      ],
+      "zoom": 15,
+      "bounds": [
+        [
+          33.2016,
+          -87.5522
+        ],
+        [
+          33.2197,
+          -87.5219
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#9E1B32"
+    },
+    "payments": "escrow"
+  }
+}

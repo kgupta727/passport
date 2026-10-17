@@ -1,0 +1,115 @@
+{
+  "slug": "lsu",
+  "name": "Louisiana State University",
+  "short": "LSU",
+  "domains": [
+    "lsu.edu"
+  ],
+  "config": {
+    "displayName": "LSU",
+    "city": "Baton Rouge",
+    "safeZones": [
+      {
+        "id": "middleton",
+        "name": "Middleton Library",
+        "lat": 30.4135,
+        "lng": -91.1801
+      },
+      {
+        "id": "union",
+        "name": "LSU Student Union",
+        "lat": 30.4126,
+        "lng": -91.1771
+      },
+      {
+        "id": "urec",
+        "name": "UREC lobby",
+        "lat": 30.4081,
+        "lng": -91.172
+      },
+      {
+        "id": "lsupd",
+        "name": "LSUPD lobby",
+        "lat": 30.4086,
+        "lng": -91.1796
+      }
+    ],
+    "housing": [
+      {
+        "id": "pentagon",
+        "name": "Pentagon Community"
+      },
+      {
+        "id": "eastcampus",
+        "name": "East Campus Apartments"
+      },
+      {
+        "id": "northgate",
+        "name": "Off campus (Northgate)"
+      }
+    ],
+    "walk": {
+      "pentagon": {
+        "middleton": 5,
+        "union": 7,
+        "urec": 14,
+        "lsupd": 4
+      },
+      "eastcampus": {
+        "middleton": 15,
+        "union": 10,
+        "urec": 6,
+        "lsupd": 14
+      },
+      "northgate": {
+        "middleton": 9,
+        "union": 11,
+        "urec": 21,
+        "lsupd": 17
+      }
+    },
+    "library": {
+      "name": "Middleton Library reserves",
+      "url": "https://www.lib.lsu.edu/"
+    },
+    "courseCatalog": "csv:lsu",
+    "shuttleDays": [],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "LSU vs Alabama",
+      "needs": [
+        "2 tickets to the Alabama game",
+        "Basketball vs Ole Miss"
+      ]
+    },
+    "map": {
+      "center": [
+        30.4133,
+        -91.1758
+      ],
+      "zoom": 15,
+      "bounds": [
+        [
+          30.4041,
+          -91.185
+        ],
+        [
+          30.4225,
+          -91.1666
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#461D7C"
+    }
+  }
+}

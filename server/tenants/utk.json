@@ -1,0 +1,130 @@
+{
+  "slug": "utk",
+  "name": "The University of Tennessee, Knoxville",
+  "short": "UTK",
+  "domains": [
+    "vols.utk.edu",
+    "utk.edu"
+  ],
+  "config": {
+    "displayName": "UTK",
+    "city": "Knoxville",
+    "safeZones": [
+      {
+        "id": "hodges",
+        "name": "Hodges Library lobby",
+        "lat": 35.9556,
+        "lng": -83.9295
+      },
+      {
+        "id": "union",
+        "name": "Student Union",
+        "lat": 35.9548,
+        "lng": -83.9284
+      },
+      {
+        "id": "trecs",
+        "name": "TRECS lobby",
+        "lat": 35.9489,
+        "lng": -83.9362
+      },
+      {
+        "id": "utpd",
+        "name": "UTPD lobby",
+        "lat": 35.9532,
+        "lng": -83.9312
+      }
+    ],
+    "housing": [
+      {
+        "id": "presidential",
+        "name": "Presidential Court"
+      },
+      {
+        "id": "massey",
+        "name": "Massey Hall"
+      },
+      {
+        "id": "fortsanders",
+        "name": "Off campus (Fort Sanders)"
+      }
+    ],
+    "walk": {
+      "presidential": {
+        "hodges": 6,
+        "union": 7,
+        "trecs": 10,
+        "utpd": 4
+      },
+      "massey": {
+        "hodges": 4,
+        "union": 6,
+        "trecs": 15,
+        "utpd": 7
+      },
+      "fortsanders": {
+        "hodges": 10,
+        "union": 12,
+        "trecs": 21,
+        "utpd": 13
+      }
+    },
+    "library": {
+      "name": "Hodges Library course reserves",
+      "url": "https://www.lib.utk.edu/"
+    },
+    "courseCatalog": "csv:utk",
+    "shuttleDays": [],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "Tennessee vs Alabama",
+      "needs": [
+        "2 tickets to the Alabama game",
+        "Basketball vs Kentucky"
+      ]
+    },
+    "map": {
+      "center": [
+        35.9547,
+        -83.9323
+      ],
+      "zoom": 15,
+      "bounds": [
+        [
+          35.9449,
+          -83.9402
+        ],
+        [
+          35.9645,
+          -83.9244
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#FF8200"
+    },
+    "season": [
+      1.1,
+      1.02,
+      0.98,
+      0.85,
+      0.7,
+      0.82,
+      0.95,
+      1.25,
+      1.12,
+      1.0,
+      0.93,
+      0.8
+    ]
+  }
+}

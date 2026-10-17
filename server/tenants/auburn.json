@@ -1,0 +1,126 @@
+{
+  "slug": "auburn",
+  "name": "Auburn University",
+  "short": "Auburn",
+  "domains": [
+    "auburn.edu",
+    "tigermail.auburn.edu"
+  ],
+  "config": {
+    "displayName": "Auburn",
+    "city": "Auburn",
+    "safeZones": [
+      {
+        "id": "rbd",
+        "name": "RBD Library lobby",
+        "lat": 32.6036,
+        "lng": -85.4866
+      },
+      {
+        "id": "melton",
+        "name": "Melton Student Center",
+        "lat": 32.6035,
+        "lng": -85.4889
+      },
+      {
+        "id": "rec",
+        "name": "Rec and Wellness Center",
+        "lat": 32.5988,
+        "lng": -85.4941
+      },
+      {
+        "id": "haley",
+        "name": "Haley Center concourse",
+        "lat": 32.6017,
+        "lng": -85.4871
+      }
+    ],
+    "housing": [
+      {
+        "id": "quad",
+        "name": "The Quad"
+      },
+      {
+        "id": "village",
+        "name": "The Village"
+      },
+      {
+        "id": "hill",
+        "name": "Hill Dorms"
+      },
+      {
+        "id": "downtown",
+        "name": "Off campus (Downtown)"
+      }
+    ],
+    "walk": {
+      "quad": {
+        "rbd": 6,
+        "melton": 5,
+        "rec": 12,
+        "haley": 7
+      },
+      "village": {
+        "rbd": 13,
+        "melton": 12,
+        "rec": 5,
+        "haley": 11
+      },
+      "hill": {
+        "rbd": 8,
+        "melton": 9,
+        "rec": 7,
+        "haley": 6
+      },
+      "downtown": {
+        "rbd": 7,
+        "melton": 4,
+        "rec": 16,
+        "haley": 9
+      }
+    },
+    "library": {
+      "name": "RBD Library course reserves",
+      "url": "https://lib.auburn.edu/"
+    },
+    "courseCatalog": "seed:auburn-fall-2026",
+    "shuttleDays": [],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "Auburn vs Georgia",
+      "needs": [
+        "2 tickets to the Iron Bowl",
+        "Basketball vs Alabama"
+      ]
+    },
+    "map": {
+      "center": [
+        32.6019,
+        -85.4892
+      ],
+      "zoom": 16,
+      "bounds": [
+        [
+          32.5948,
+          -85.4991
+        ],
+        [
+          32.6076,
+          -85.4816
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#0C2340"
+    }
+  }
+}

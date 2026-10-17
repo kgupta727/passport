@@ -1,0 +1,42 @@
+Seed listing photos. All CC0 1.0 (public domain), via Openverse / StockSnap. Cropped to 4:3, 1200x900.
+
+calculus-stack.jpg: "Stacked Books" by Matt Bango, CC0 1.0, https://stocksnap.io/photo/stacked-books-DGF2LFZ6JJ
+calculus-open.jpg: "Open Books" by Matt Bango, CC0 1.0, https://stocksnap.io/photo/open-books-HECYA5SP1L
+calculus-tower.jpg: "Books Stacked" by Candace McDaniel, CC0 1.0, https://stocksnap.io/photo/books-stacked-W5VAXXV2RP
+calculus-desk.jpg: "Book Reading" by Patrick Fore, CC0 1.0, https://stocksnap.io/photo/book-reading-OT37RD9KJN
+calculus-notes.jpg: "Math Equation" by Snufkin, CC0 1.0, https://stocksnap.io/photo/math-equation-GQ1ZPF01BL
+calculus-old.jpg: "Book Reading" by Caio Resende, CC0 1.0, https://stocksnap.io/photo/book-reading-Y4P32I1G1K
+econ.jpg: "Books Reading" by Raymond Sam, CC0 1.0, https://stocksnap.io/photo/books-reading-DU0O1PCIMH
+biology.jpg: "Books Reading" by Leeroy, CC0 1.0, https://stocksnap.io/photo/books-reading-9Z7XRBK4N5
+writing.jpg: "Books Reading" by Aaron Burden, CC0 1.0, https://stocksnap.io/photo/books-reading-CN63QSUO8C
+calculator.jpg: "Calculator Math" by Michal Jarmoluk, CC0 1.0, https://stocksnap.io/photo/calculator-math-4O9OAU2YJL
+calculator-2.jpg: "Calculator Pencil" by Iryna Tysiak, CC0 1.0, https://stocksnap.io/photo/calculator-pencil-OQ5FRQT0ZR
+lamp.jpg: "Black Lamp" by Eneida Nieves, CC0 1.0, https://stocksnap.io/photo/black-lamp-G8H5ZG3PAN
+futon.jpg: "Couch Furniture" by Kristin Hardwick, CC0 1.0, https://stocksnap.io/photo/couch-furniture-TQNWBTLHLY
+bike.jpg: "Bike Bicycle" by Markus Spiske, CC0 1.0, https://stocksnap.io/photo/bike-bicycle-9WRTTVGZOS
+bike-2.jpg: "Bicycle Bike" by Alisa Anton, CC0 1.0, https://stocksnap.io/photo/bicycle-bike-Y2KCFMGHD1
+topper.jpg: "Bed Sheets" by Jay Mantri, CC0 1.0, https://stocksnap.io/photo/bed-sheets-3E40BB7D1D
+topper-2.jpg: "Bed Bedsheets" by Krista Mangulsone, CC0 1.0, https://stocksnap.io/photo/bed-bedsheets-SAKL1LQWRI
+chair.jpg: "Chair Pillow" by Breather, CC0 1.0, https://stocksnap.io/photo/chair-pillow-V24XMHT4Q6
+microwave.jpg: "Microwave Food" by Lisa Fotios, CC0 1.0, https://stocksnap.io/photo/microwave-food-21CWIC8UCJ
+fridge.jpg: "Brazilian minibar" by Wikimedia Commons user (Openverse id cfa99a26), CC0 1.0, https://commons.wikimedia.org/wiki/File:Brazilian_minibar.jpeg (cropped)
+office-chair.jpg: "Office chairs, patterned fabric, green, blue, Microsoft building 5, Redmond Town Center, Washington, USA" by Wonderlane, CC0 1.0, https://www.flickr.com/photos/71401718@N00/8189158766
+headphones.jpg: "Headphones" by pasukaru76, CC0 1.0, https://www.flickr.com/photos/38451115@N04/3605234342
+keyboard.jpg: "purple backlit mechanical keyboard as" by unknown, CC0 1.0, https://www.rawpixel.com/image/3298523/free-photo-image-laptop-computer-awesome
+speaker.jpg: "Beats By Dr. Dre Pill Portable Bluetooth Speaker Black N2" by Beats, CC0 1.0, https://commons.wikimedia.org/w/index.php?curid=96224550
+monitor.jpg: "Computer Monitors" by Tran Mau Tri Tam, CC0 1.0, https://stocksnap.io/photo/computer-monitors-SLZRDLFT96
+desk.jpg: "Xixia Wooden Desk" by Gary Lee Todd, Ph.D., CC0 1.0, https://www.flickr.com/photos/101561334@N08/41252892574
+laptop-desk.jpg: "Laptop Table" by Burst, CC0 1.0, https://stocksnap.io/photo/laptop-table-KGTYLTZMHU
+coffee-maker.jpg: "Vacuum-coffee-maker-1" by Evelyn-rose, CC0 1.0, https://commons.wikimedia.org/w/index.php?curid=80396927
+yoga-mat.jpg: "Rolled teal yoga mat its" by unknown, CC0 1.0, https://www.rawpixel.com/image/11515776/rolled-teal-yoga-mat-its-side
+tennis-racket.jpg: "Tennis Racket" by Krzysztof%20Puszczy%u0144ski, CC0 1.0, https://stocksnap.io/photo/tennis-racket-8ODE0WIMD9
+writing-2.jpg: "Book Stack" by temetzger, CC0 1.0, https://www.flickr.com/photos/44316192@N04/4291119747
+lamp-2.jpg: "Table Lamp" by Kristin Hardwick, CC0 1.0, https://stocksnap.io/photo/table-lamp-CGPGQOOQ4I
+alarm-clock.jpg: "Black Alarmclock" by JESHOOTS.com, CC0 1.0, https://stocksnap.io/photo/black-alarmclock-TZHYCANBO9
+rug.jpg: "Rug Floor" by Catt Liu, CC0 1.0, https://stocksnap.io/photo/rug-floor-3269D623A7
+rain-jacket.jpg: "Yellow Jacket" by Justin Luebke, CC0 1.0, https://stocksnap.io/photo/yellow-jacket-C6J16TFD75
+sweatshirt.jpg: "Hoodie Sweater" by Paul Garaizar, CC0 1.0, https://stocksnap.io/photo/hoodie-sweater-CA09F37D61
+tv.jpg: "Interior Living" by Jaros%u0142aw%20Ceborski, CC0 1.0, https://stocksnap.io/photo/interior-living-6SMA09U7Y8
+coffee-maker-2.jpg: "Blackcoffee Maker" by Habib Parvin, CC0 1.0, https://stocksnap.io/photo/blackcoffee-maker-0QLBFDGXKX
+econ-2.jpg: "Apple Textbooks" by Michal Jarmoluk, CC0 1.0, https://stocksnap.io/photo/apple-textbooks-NAOWFGI5EF
+lamp-floor.jpg: "Lamp Light" by David van Dijk, CC0 1.0, https://stocksnap.io/photo/lamp-light-6QHJ61570D

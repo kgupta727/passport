@@ -1,0 +1,12 @@
+{
+  "name": "Passport",
+  "short_name": "Passport",
+  "description": "The campus marketplace that finishes the trade for you.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F2",
+  "theme_color": "#FAF8F2",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "olemiss",
+  "name": "University of Mississippi",
+  "short": "Ole Miss",
+  "domains": [
+    "go.olemiss.edu",
+    "olemiss.edu"
+  ],
+  "config": {
+    "displayName": "Ole Miss",
+    "city": "Oxford",
+    "safeZones": [
+      {
+        "id": "jdw",
+        "name": "J.D. Williams Library",
+        "lat": 34.3651,
+        "lng": -89.5369
+      },
+      {
+        "id": "union",
+        "name": "Student Union",
+        "lat": 34.3644,
+        "lng": -89.5344
+      },
+      {
+        "id": "turner",
+        "name": "Turner Center lobby",
+        "lat": 34.3612,
+        "lng": -89.5381
+      },
+      {
+        "id": "upd",
+        "name": "UPD lobby",
+        "lat": 34.3628,
+        "lng": -89.5418
+      }
+    ],
+    "housing": [
+      {
+        "id": "residential",
+        "name": "Residential College South"
+      },
+      {
+        "id": "kincannon",
+        "name": "Kincannon Hall"
+      },
+      {
+        "id": "square",
+        "name": "Off campus (The Square)"
+      }
+    ],
+    "walk": {
+      "residential": {
+        "jdw": 8,
+        "union": 6,
+        "turner": 6,
+        "upd": 11
+      },
+      "kincannon": {
+        "jdw": 5,
+        "union": 8,
+        "turner": 10,
+        "upd": 8
+      },
+      "square": {
+        "jdw": 26,
+        "union": 22,
+        "turner": 29,
+        "upd": 33
+      }
+    },
+    "library": {
+      "name": "J.D. Williams Library reserves",
+      "url": "https://libraries.olemiss.edu/"
+    },
+    "courseCatalog": "csv:olemiss",
+    "shuttleDays": [],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "Ole Miss vs LSU",
+      "needs": [
+        "2 tickets to the LSU game",
+        "Basketball vs Alabama"
+      ]
+    },
+    "map": {
+      "center": [
+        34.364,
+        -89.5305
+      ],
+      "zoom": 15,
+      "bounds": [
+        [
+          34.3572,
+          -89.5458
+        ],
+        [
+          34.3707,
+          -89.5151
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#CE1126"
+    }
+  }
+}

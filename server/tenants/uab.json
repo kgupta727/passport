@@ -1,0 +1,131 @@
+{
+  "slug": "uab",
+  "name": "University of Alabama at Birmingham",
+  "short": "UAB",
+  "domains": [
+    "uab.edu"
+  ],
+  "config": {
+    "displayName": "UAB",
+    "city": "Birmingham",
+    "safeZones": [
+      {
+        "id": "sterne",
+        "name": "Sterne Library entrance",
+        "lat": 33.5018,
+        "lng": -86.8094
+      },
+      {
+        "id": "hill",
+        "name": "Hill Student Center",
+        "lat": 33.5009,
+        "lng": -86.8066
+      },
+      {
+        "id": "rec",
+        "name": "Campus Rec lobby",
+        "lat": 33.4985,
+        "lng": -86.8001
+      },
+      {
+        "id": "police",
+        "name": "UAB Police lobby",
+        "lat": 33.5043,
+        "lng": -86.8051
+      }
+    ],
+    "housing": [
+      {
+        "id": "blazer",
+        "name": "Blazer Hall"
+      },
+      {
+        "id": "camp",
+        "name": "Camp Hall"
+      },
+      {
+        "id": "rast",
+        "name": "Rast Hall"
+      },
+      {
+        "id": "southside",
+        "name": "Off campus (Southside)"
+      }
+    ],
+    "walk": {
+      "blazer": {
+        "sterne": 7,
+        "hill": 5,
+        "rec": 4,
+        "police": 9
+      },
+      "camp": {
+        "sterne": 6,
+        "hill": 4,
+        "rec": 6,
+        "police": 7
+      },
+      "rast": {
+        "sterne": 3,
+        "hill": 5,
+        "rec": 10,
+        "police": 4
+      },
+      "southside": {
+        "sterne": 12,
+        "hill": 9,
+        "rec": 7,
+        "police": 15
+      }
+    },
+    "library": {
+      "name": "Sterne Library course reserves",
+      "url": "https://library.uab.edu/"
+    },
+    "courseCatalog": "seed:uab-fall-2026",
+    "shuttleDays": [
+      {
+        "to": "ua",
+        "weekday": 5,
+        "label": "Blazer weekend shuttle to Tuscaloosa"
+      }
+    ],
+    "ticketPriceCap": 1.15,
+    "geofenceRequired": false,
+    "examples": {
+      "event": "UAB vs Memphis",
+      "needs": [
+        "2 tickets to the Memphis game",
+        "Blazers basketball"
+      ]
+    },
+    "map": {
+      "center": [
+        33.5014,
+        -86.8053
+      ],
+      "zoom": 16,
+      "bounds": [
+        [
+          33.4945,
+          -86.8144
+        ],
+        [
+          33.5083,
+          -86.7951
+        ]
+      ]
+    },
+    "features": {
+      "arena": true,
+      "tickets": true,
+      "services": true,
+      "crossCampus": true,
+      "chat": true,
+      "explore": true
+    },
+    "brand": {
+      "color": "#1E6B52"
+    }
+  }
+}
